@@ -12,16 +12,37 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
         }
 
         td, th{
             border: 1px solid black;
+            padding: 10px;
         }
 
         thead{
             color: white;
             background-color: gray;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
         td{
             padding: 10px;
         }
@@ -36,6 +57,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES 
         TABLE 
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +66,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estdo</th>
-                <th>População</th>
+                <th scope="col">Estdo</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,15 +185,29 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th><!--(th) cabeçalho-->
+                <th scope="row">Total de habitantes</th><!--(th) cabeçalho-->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
  
         </tfoot>
-              
+    </table>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium fuga iure non delectus nemo facere debitis est ipsam itaque! Unde iste provident adipisci facilis explicabo dolorem molestias, qui magnam dolore ex rem corrupti laboriosam dolor voluptate, cum dolorum cupiditate culpa! Ipsa, commodi. Exercitationem natus odio consectetur officiis obcaecati voluptatem cumque nulla alias tenetur voluptate dolores quia laborum animi nesciunt, nostrum deleniti autem? Velit dicta quos tempore! Necessitatibus omnis veniam magni ad, dolore velit beatae tempora expedita minus enim rerum quos dicta, consequuntur laudantium dolores blanditiis dignissimos unde! Laboriosam saepe corporis illum, eveniet vitae eos deserunt, nihil eius consequatur fugiat atque?</p>  
             
 
 
-    </table>
 </body>
 </html>
