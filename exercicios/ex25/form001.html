@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+    <form action="cadastrar.php" method="post" autocomplete="on">
+
+        <div class="nome">
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required minlength="5" autocomplete="username">
+        </div>
+        <div class="senha">
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="5"
+            maxlength="20" autocomplete="current-password">
+        </div>
+        <div class="">
+            
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+    
+</body>
+</html>
