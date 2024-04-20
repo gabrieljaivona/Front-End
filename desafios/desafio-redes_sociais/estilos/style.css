@@ -21,7 +21,6 @@ body{
 main {
     height: 100vh;
     position: relative;
-    background-color: green;
 }
 #telefone {
     position: absolute;
@@ -31,6 +30,34 @@ main {
     
     height: 627px;
     width: 311px;
-    background: blue url('../imagens/frame-iphone.png') no-repeat;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
 
+#tela {
+    position: relative;
+    top: 80px;
+    left: 20px;
+    width: 269px;
+    height: 471px;
+}
+
+#rede-sociais{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#rede-sociais img {
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    box-sizing: border-box;
+}
+
+#rede-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.63);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: .2s;
 }
