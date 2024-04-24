@@ -14,19 +14,26 @@
     }
 
     #login{
+       /* width: 90vw;
+       /* height: 280px;*/
+        display: flex;
+        flex-direction: row;
         width: 90vw;
-        height: 280px;
+        height: 350px;
     }
 
-    #login > #imagem {
-        float: left;
-        width: 30%;
+    #formulario {
+        width: 60%;
+    }
+
+
+    #imagem {
+        background: #5f2c82 url('../imagens/metal.jpg') no-repeat ;
+        background-size: cover;
+        background-position: left bottom;
+        border-bottom-left-radius: 10px;
+        width: 40%;
         height: 100%;
-    }
-
-    #login > #formulario {
-        float: right;
-        width: 70%;
     }
 }
 
@@ -37,23 +44,42 @@
     }
 
     #login {
-        width: 990px;
+        width: 80vw;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
     }
-    #login > #imagem {
-        float: right;
+    #imagem {
+        background: #5f2c82 url('../imagens/metal.jpg') no-repeat ;
+        background-size: cover;
+        background-position: left bottom;
         width: 50%;
         height: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
     }
 
     #login > #formulario {
-        float: left;
         width: 50%;
     }
     #formulario > h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     #formulario > p {
-        font-size: 1em;
+        font-size: 1.5em;
         margin: 20px 0px;
+    }
+
+    .campo > input {
+        padding-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    .campo_entrar-esqueci > input, a {
+        font-size: 1.2rem;
+    }
+
+    .campo_entrar-esqueci > a {
+        font-size: 1.2rem;
     }
 }
